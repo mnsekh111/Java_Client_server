@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author mns
  */
-public class Client {
+public class EchoClient {
 
     public static void main(String[] args) {
         String serverHostname = new String("127.0.0.1");
@@ -60,7 +60,7 @@ public class Client {
                 System.out.print("Enter a message : ");
             }
         } catch (IOException ex) {
-            Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EchoClient.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         try {
@@ -70,7 +70,7 @@ public class Client {
             stdIn.close();
             socket.close();
         } catch (IOException ex) {
-            Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EchoClient.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }

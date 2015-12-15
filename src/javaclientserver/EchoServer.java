@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  *
  * @author mns
  */
-public class Server {
+public class EchoServer {
 
     public static void main(String[] args) {
         int portNum = 9991;
@@ -65,7 +65,7 @@ public class Server {
             serverSocket.close();
             
         } catch (IOException ex) {
-            Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(EchoServer.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
