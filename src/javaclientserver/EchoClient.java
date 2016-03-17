@@ -21,7 +21,8 @@ import java.util.logging.Logger;
 public class EchoClient {
 
     public static void main(String[] args) {
-        String serverHostname = new String("127.0.0.1");
+        //String serverHostname = new String("127.0.0.1");
+        String serverHostname = new String("192.168.0.21");
         int portNum = 9991;
 
         if (args.length > 0) {
